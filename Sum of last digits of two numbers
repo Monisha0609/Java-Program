@@ -1,0 +1,15 @@
+public class LastDigitSum {
+    public static int getLastDigitSum(int num1, int num2) {
+        int lastDigit1 = num1 % 10;
+        int lastDigit2 = num2 % 10;
+        int sum = lastDigit1 + lastDigit2;
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int number1 = 123;
+        int number2 = 456;
+        int result = getLastDigitSum(number1, number2);
+        System.out.println("Sum of last digits: " + result);
+    }
+}
